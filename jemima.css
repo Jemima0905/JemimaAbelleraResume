@@ -1,0 +1,207 @@
+/*REQUIRED:  Author: Jemima Abellera 
+    Date:   12/9/2021
+		My final Project
+*/
+
+
+body > header >img {
+  background: url("picture/banner.png") center center / 100% 100% no-repeat;
+  width: 100%;
+  display: block;
+}
+
+body { 	
+		background-color: rgb(149,102,55); /* brown background*/
+				 }
+	 
+main {
+		padding-top: 2em;
+}
+
+div#vidintro1 > video {
+		width: 600px;
+}
+
+nav  {  height: 1.7em;
+		background-color:#FFFFFF; /* white back ground*/
+		text-align:center;
+		list-style-type: none;
+		font-size: 2em;
+		padding-top: .5em;
+		padding-bottom: .5em;
+		display: block;
+	 }
+
+
+nav a { text-decoration: none; 
+		padding: .5em .5em .5em .5em;
+		color: Black;
+} /*  no underline*/
+
+nav a:hover {
+	color: #cf6856;
+}
+
+
+#wrapper {	background-color: #FFFFFF;
+			padding: 1em;
+			padding-top: .5em ; 
+			margin: 2em auto auto auto ; 
+			width: 80%;
+
+}	 
+
+/*  main thing */
+
+main#index {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+
+div#vidintro1  {/*  video*/
+	display: block;
+}
+
+ div#textintro1 {
+	display: block;
+	width: 45%;
+}
+
+div#textintro1 > p {
+	text-align: center;
+	font-size: 1.5 em;
+	
+	/* Intro */
+}
+
+div#container1, div#figures, div#index {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+div#Skills {
+	width: 50%;
+	display: block;
+	flex-flow: row wrap;
+}
+
+.artist {
+	display: block;
+	border-radius: 35px;
+}
+
+.portfolio, .services, table, div#vidintro1 {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.portfolio { 
+  display: block;
+  border-radius: 35px;
+ 
+
+}
+
+.contact {
+	width: 40%;
+}
+
+figcaption {
+	text-align: center;
+	
+}
+a:link { text-decoration: none; }
+h1, legend {
+    text-align: center;
+  }
+
+table {
+   border: 1px solid;
+}
+
+table td {
+   border: 1px solid ;
+   vertical-align: top;
+   padding: 4px;
+   width: 50%;
+}
+
+/* Text Area Styles */
+
+textarea {
+	margin-top: 10px;
+	height: 100px;
+	width: 35%;
+}
+
+fieldset {
+	
+	text-align: center;
+	
+}
+
+div#buttons {
+	text-align: center;
+	width: 100%;
+}
+
+div#contact {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	margin-right: auto;
+	margin-lefT: auto;
+}	
+
+input[type='submit'], input[type='reset'] {
+	font-size: .7em;
+	padding: 5px;
+	margin: 15px;
+}
+
+footer { 
+	text-align:center;
+	font-size: 1.5em;
+	background-color: rgb(149,102,55);
+	
+
+} /*  footer */
+
+/* Mobile Styles: 0px to 480px */
+@media only screen and (max-width: 480px){
+	nav {
+		font-size: 1em;
+	}
+
+	div#vidintro1 > video {
+		max-width: 80%;
+		height: auto;
+	}
+
+	.portfolio {
+		max-width: 75%;
+		height: auto;
+	}
+	
+}
+
+/*Tablet Styles: 481px and greater */
+@media only screen and (min-width: 481px) {
+
+	div#vidintro1 > video {
+		max-width: 80%;
+		height: auto;
+	}
+
+
+		.portfolio {
+		max-width: 75%;
+		height: auto;
+	}
+}
+
+/* Desktop Styles : 769 px and greater */
+@media only screen and (min-width: 769px){
+}
