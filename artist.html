@@ -1,99 +1,214 @@
-<!DOCTYPE html>
-<!--REQUIRED:  Author: Jemima Abellera 
+/*REQUIRED:  Author: Jemima Abellera 
     Date:   12/9/2021
--->
-<html lang ="en">
-<head>
-<title>artist</title>
-<meta charset="utf-8"> 
-<meta http-equiv="X-UA-Compatible" Content="IE=edge">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="keywords" content="jemima abellera website">
-<meta name="description" content="jemima abellera website, jemima abellera portfolio">
-<link rel="stylesheet" type="text/css" href="jemima.css">
-</head>
-<body>
-<nav>
-         <a href="index.html">home</a>
-         <a href="artist.html">artist</a>
-         <a href="portfolio.html">portfolio</a>
-		 <a href="service.html">service</a>
-		 <a href="contact.html">contact</a>
-</nav> 
-<header><img src="picture/banner.png" alt="black banner" width="100" height="150" /></header>	 
-<div id="wrapper">
-<main>
+		My final Project
+*/
 
-<p id="Objective">
-<h1>Objective</h1>
-A creative and resourceful person who has a stellar customer service record with a superb work ethic.
-Meanwhile, she is looking forward to growing and to learn more in the web development and design industry. She is looking to obtain an Entry level or Jr.
-position available in either Web Development and Design or Any Desktop Support position.
-She is currently taking courses to earn her Associate in Web Development and Design and would love to practice and enhance her skills in Research,Web Development and Design.
-</p>
-</div>
-<div class="artist">
-<img src="picture/me1.jpg" alt="Female picture" width="250" height="400">
-<img src="picture/me2.jpg" alt="Female picture" width="250" height="400">
-<img src="picture/me3.jpg" alt="Female picture" width="250" height="400">
-<img src="picture/me4.jpg" alt="Female picture" width="250" height="400" >
-</div>
+
+body > header >img {
+  background: url("picture/banner.png") center center / 100% 100% no-repeat;
+  width: 100%;
+  display: block;
+}
+
+body { 	
+		background-color: rgb(149,102,55); /* brown background*/
+				 }
+	 
+main {
+		padding-top: 2em;
+}
+
+div#vidintro1 > video {
+		width: 600px;
+}
+
+nav  {  height: 1.7em;
+		background-color:#FFFFFF; /* white back ground*/
+		text-align:center;
+		list-style-type: none;
+		font-size: 2em;
+		padding-top: .5em;
+		padding-bottom: .5em;
+		display: block;
+	 }
+
+
+nav a { text-decoration: none; 
+		padding: .5em .5em .5em .5em;
+		color: Black;
+} /*  no underline*/
+
+nav a:hover {
+	color: #cf6856;
+}
+
+
+#wrapper {	background-color: #FFFFFF;
+			padding: 1em;
+			padding-top: .5em ; 
+			margin: auto auto auto auto ; 
+			width: auto;
+
+}	 
+
+/*  main thing */
+
+main#index {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+
+div#vidintro1  {/*  video*/
+	display: block;
+}
+
+ div#textintro1 {
+	display: block;
+	width: auto;
+}
+
+div#textintro1 > p {
+	text-align: center;
+	font-size: 1.5 em;
 	
-<div id="container1">
+	/* Intro */
+}
+
+div#container1, div#figures, div#index {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+div#Skills {
+	width: auto;
+	display: block;
+	flex-flow: row wrap;
+}
+
+.artist {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height:auto;
+  margin:0 auto;
+  text-align: center;
+
+}
+
+.portfolio, .services, table, div#vidintro1 {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.portfolio { 
+  display: block;
+  border-radius: 35px;
+ 
+
+}
+
+.contact {
+	width: 40%;
+}
+
+figcaption {
+	text-align: center;
+	
+}
+a:link { text-decoration: none; }
+h1, legend {
+    text-align: center;
+  }
+
+table {
+   border: 1px solid;
+}
+
+table td {
+   border: 1px solid ;
+   vertical-align: top;
+   padding: 4px;
+   width: 50%;
+}
+
+/* Text Area Styles */
+
+textarea {
+	margin-top: 10px;
+	height: 100px;
+	width: 35%;
+}
+
+fieldset {
+	
+	text-align: center;
+	
+}
+
+div#buttons {
+	text-align: center;
+	width: 100%;
+}
+
+div#contact {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	margin-right: auto;
+	margin-lefT: auto;
+}	
+
+input[type='submit'], input[type='reset'] {
+	font-size: .7em;
+	padding: 5px;
+	margin: 15px;
+}
+
+footer { 
+	text-align:center;
+	font-size: 1.5em;
+	background-color: rgb(149,102,55);
 	
 
-<div id="Skills" >
+} /*  footer */
 
-<h3>Skills in Information Technology</h3>
-<ul>
- <li>Understanding of computer technology, concepts, terminology, and the role of computers in business and society. </li>
- <li>Use of word processing, spreadsheet, database, and presentation software. </li>
- <li>Understanding of application software and the Internet for efficient and effective problem solving. </li>
- <li><b> Basic Experience in Active Directory.</b> <i>Active Directory</i> is a directory service that runs on Microsoft Windows Server. 
- The main function of Active Directory is to enable administrators to manage permissions and control access to network resources </li>
- <li><b> Basic knowledge of Microsoft's System Center Configuration Manager (SCCM)</b> this software provides a comprehensive tool for change and configuration management for Microsoft Windows
- 7/Vista/XP platforms.It enables organizations to push out relevant operating systems, applications, and updates to Windows users quickly and cost-effectively. </li>
-</ul>
+/* Mobile Styles: 0px to 480px */
+@media only screen and (max-width: 480px){
+	nav {
+		font-size: 1em;
+	}
 
-<h3>Skills in Digital Marketing</h3>
-<ul>
-<li>Understanding of Key Digital Marketing Channels such as SEO, social media, Affiliates, Content and Email etc.</li>
-<li>Understand of Defining target audience and creating paid campaigns for social and search engines</li>
-</ul>
+	div#vidintro1 > video {
+		max-width: 80%;
+		height: auto;
+	}
 
-<h3>Skills in Web Development & Design</h3>
-<dl>
-<dt><b>HTML and CSS</dt></b>
-	<dd>Design and Development of multi-page websites using current <b> Hyper Text Markup Language 5 (HTML) and Cascading Style Sheets 3 (CSS)</b> standards.</dt>
-<dt><b><p>JavaScript, jQuery </b></dt>
-<dd>Level 1 JavaScript programming concepts including syntax. Covers Hypertext Markup Language (HTML), programming logic and debugging, 
-as well as forms manipulation and animation.</p></dd>
+	.portfolio {
+		max-width: 75%;
+		height: auto;
+	}
+	
+}
 
-<p><b><dt>GitHub, Notepad++,Visual Studio, Code Pen </b><dt>
-		<dd>Software used to create, edit and publish codes</dd></p>
+/*Tablet Styles: 481px and greater */
+@media only screen and (min-width: 481px) {
 
-<p><dt><b>WordPress</b></dt>
-  <dd>Overview of WordPress Content Management System. Includes hands-on design and creation of web pages for the World Wide Web.</dd></p>
-
-<p><dt><b>E-Commerce</b>
-	<dd>Designing an electronic storefront including web page content and development, e-commerce site marketing, 
-		advertisement, legal and security considerations, credit card and other debit transaction covered. 
-		</dd></p>
-
-<p><dt><b>Python Programming : Level I</b>
-		<dd>General concepts, program design, development, data types, operators, 
-		expressions, flow control, functions, classes, input and output operations,
-		debugging, structured programming, and object-oriented programming.</dd></p>
-
-<p><dt><b> Adobe Photoshop</dt></b>
-			<dd>Focuses on entry-level skills and knowledge for digital imaging using Adobe Photoshop.</dd></p>
-</dl>
+	div#vidintro1 > video {
+		max-width: 80%;
+		height: auto;
+	}
 
 
-</div>
-</div>
-</main>
+		.portfolio {
+		max-width: 75%;
+		height: auto;
+	}
+}
 
-<footer><p><small>Copyright &copy; 2022 Jemima Abellera. All Rights Reserved.</small></p></footer>	
-</body>
-</html>
+/* Desktop Styles : 769 px and greater */
+@media only screen and (min-width: 769px){
+}
