@@ -1,6 +1,6 @@
 /*REQUIRED:  Author: Jemima Abellera 
     Date:   12/9/2021
-		My final Project
+		
 */
 
 
@@ -46,8 +46,8 @@ nav a:hover {
 #wrapper {	background-color: #FFFFFF;
 			padding: 1em;
 			padding-top: .5em ; 
-			margin: 2em auto auto auto ; 
-			width: 80%;
+			margin: auto auto auto auto ; 
+			width: auto;
 
 }	 
 
@@ -65,7 +65,7 @@ div#vidintro1  {/*  video*/
 
  div#textintro1 {
 	display: block;
-	width: 45%;
+	width: auto;
 }
 
 div#textintro1 > p {
@@ -82,7 +82,7 @@ div#container1, div#figures, div#index {
 }
 
 div#Skills {
-	width: 50%;
+	width: auto;
 	display: block;
 	flex-flow: row wrap;
 }
